@@ -2,6 +2,7 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 
 dotenv.config();
+dotenv.config();
 
 export const fetchRelevantJobs = async (skills: string[], title: string) => {
     const query = `${title} ${skills.slice(0, 5).join(' ')}`;
