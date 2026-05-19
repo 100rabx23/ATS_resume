@@ -27,6 +27,6 @@ export const fetchRelevantJobs = async (skills: string[], title: string) => {
         return response.data.data; // The actual jobs array
     } catch (error) {
         console.error('Error fetching jobs from RapidAPI:', error);
-        throw new Error('Failed to fetch job listings.');
+        throw new Error('Failed to fetch job listings!!.');
     }
 };
